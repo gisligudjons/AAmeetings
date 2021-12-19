@@ -1,0 +1,22 @@
+html, body {
+    height: 100%;
+}
+
+#mapid {
+    width: 75%;
+    height: 75%;
+    margin-right: 80%;
+}
+
+#map-div {
+  margin-left: 20%;
+}
+
+#filter {
+  margin-left: 80%;
+
+}
+
+#example-table {
+
+}
