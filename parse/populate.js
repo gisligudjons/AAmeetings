@@ -22,7 +22,7 @@ async.eachSeries(addressesForDb, function(value, callback) {
     // When mixing variables into a query, place them in a `values` array and then refer to those 
     // elements within the `text` portion of the query using $1, $2, etc.
     let query = {
-      text: "INSERT INTO aamtgs VALUES($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14)",
+      text: "INSERT INTO AA VALUES($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14)",
       values: [value.mtgName, value.mtgDay, value.mtgStart, value.mtgEnd, value.mtgType, value.mtgInt, value.mtgPlace, value.mtgPlaceNotes, value.mtgZone, value.mtgAddress.address, value.mtgAddress.details, value.mtgADA, value.latLng.lat, value.latLng.lng]
     };
 
